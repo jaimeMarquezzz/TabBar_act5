@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
@@ -35,11 +35,11 @@ class _MyHomePageState extends State<MyHomePage> {
           bottom: TabBar(
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Color(0xff000000)),
+                color: Color(0xff233a1a)),
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
+              Tab(icon: Icon(Icons.add_photo_alternate)),
+              Tab(icon: Icon(Icons.account_tree)),
+              Tab(icon: Icon(Icons.add_ic_call)),
               Tab(icon: Icon(Icons.add_circle)),
             ],
           ),
@@ -48,9 +48,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
+            Icon(Icons.add_photo_alternate, size: 350),
+            Icon(Icons.account_tree, size: 350),
+            Icon(Icons.add_ic_call, size: 350),
             Icon(Icons.add_circle, size: 350),
           ],
         ),
